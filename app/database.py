@@ -1,10 +1,28 @@
-from sqlmodel import create_engine, Session, SQLModel
-from core.config import settings
+from typing import AsyncGenerator
+from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
+from sqlalchemy.orm import sessionmaker
+from sqlmodel import SQLModel, text
+from dotenv import load_dotenv
+import os
 
-engine = create_engine(settings.DATABASE_URL)
+# Laad de .env file
+load_dotenv()
+# engine = create_async_engine(os.getenv("DATABASE_URL"))
+engine = create_async_engine("postgresql+asyncpg://rag:rag@db/rag")
 
-def init_db():
-    with Session(engine) as session:
-        session.exec_driver_sql("CREATE EXTENSION IF NOT EXISTS vector")
-    SQLModel.metadata.create_all(engine)
+# De sessie-maker configuratie
+async_session_maker = sessionmaker(
+    engine, class_=AsyncSession, expire_on_commit=False
+)
 
+async def init_db():
+    async with engine.begin() as conn:
+        # Extensie installeren
+        await conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
+        # Tabellen aanmaken (dit moet in een asynchrone context)
+        await conn.run_sync(SQLModel.metadata.create_all)
+
+# Helper om een sessie te krijgen
+async def get_session() -> AsyncGenerator[AsyncSession, None]:
+    async with async_session_maker() as session:
+        yield session

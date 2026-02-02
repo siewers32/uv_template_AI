@@ -1,14 +1,28 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from sqlmodel import Session, select
 from database import engine, init_db
 from models import Document, QueryRequest, QueryResponse
 from core.llm import get_embedding, generate_answer
+from dotenv import load_dotenv
+from contextlib import asynccontextmanager
 
-app = FastAPI()
+# Laad de .env file
+load_dotenv()
 
-@app.on_event("startup")
-def on_startup():
-    init_db()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # --- Code hieronder wordt uitgevoerd bij het OPSTARTEN ---
+    print("Database initialiseren...")
+    await init_db()
+    
+    yield  # De applicatie draait nu
+    
+    # --- Code hieronder wordt uitgevoerd bij het AFSLUITEN ---
+    print("Applicatie wordt afgesloten...")
+    # Hier kun je bijv. database-pools of connecties met LLM-services netjes sluiten
+
+# Geef de lifespan functie mee bij het aanmaken van de app
+app = FastAPI(title="RAG API", lifespan=lifespan)
 
 @app.post("/ask", response_model=QueryResponse)
 async def ask(request: QueryRequest):

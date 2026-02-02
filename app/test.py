@@ -18,14 +18,4 @@ def get_embedding(text: str) -> list[float]:
     )
     return response.data[0].embedding
 
-def generate_answer(question: str, context: str) -> str:
-    prompt = f"""Gebruik de onderstaande context om de vraag te beantwoorden. 
-    Context: {context}
-    Vraag: {question}
-    Antwoord:"""
-    
-    response = client.chat.completions.create(
-        model=os.getenv("LLM_MODEL"),
-        messages=[{"role": "user", "content": prompt}]
-    )
-    return response.choices[0].message.content
+get_embedding("glq;werwe;wer;wer") 
