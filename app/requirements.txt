@@ -1,0 +1,8 @@
+fastapi 
+uvicorn 
+sqlmodel 
+pgvector 
+openai 
+pandas 
+python-dotenv 
+psycopg2-binary
