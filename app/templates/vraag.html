@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stel een vraag</title>
+</head>
+<body>
+    <h1>Stel hier je vraag</h1>
+    <form method="post">
+        <label for="vraag">Je vraag:</label><br>
+        <textarea name="vraag" id="vraag" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Verstuur</button>
+    </form>
+
+    {% if antwoord %}
+        <h2>Ontvangen vraag:</h2>
+        <p>{{ antwoord }}</p>
+    {% endif %}
+</body>
+</html>
