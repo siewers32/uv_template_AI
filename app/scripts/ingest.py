@@ -27,7 +27,7 @@ async def run_ingestion(csv_path: str, text_col: str):
             # Hier gebruiken we nu 'extra_info' in plaats van 'metadata'
             doc = Document(
                 content=content,
-                embedding=get_embedding(content),
+                embedding= await get_embedding(content),
                 extra_info=row.to_json() 
             )
             session.add(doc)
