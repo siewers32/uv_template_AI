@@ -1,19 +1,11 @@
-id;sensor_id;description;created_at;updated_at
-1;7;slaapkamer;2023-06-29 20:07:28;2023-06-29 20:07:28
-2;5;kelder;2023-06-29 20:07:28;2023-06-29 20:07:28
-3;1;kelder;2023-06-29 20:07:28;2023-06-29 20:07:28
-4;1;kelder;2023-06-29 20:07:28;2023-06-29 20:07:28
-5;2;badkamer;2023-06-29 20:07:28;2023-06-29 20:07:28
-6;3;keuken;2023-06-29 20:07:28;2023-06-29 20:07:28
-7;0;slaapkamer;2023-06-29 20:07:28;2023-06-29 20:07:28
-8;5;keuken;2023-06-29 20:07:28;2023-06-29 20:07:28
-9;1;slaapkamer;2023-06-29 20:07:28;2023-06-29 20:07:28
-10;3;keuken;2023-06-29 20:07:28;2023-06-29 20:07:28
-11;6;keuken;2023-06-29 20:07:28;2023-06-29 20:07:28
-12;0;kelder;2023-06-29 20:07:28;2023-06-29 20:07:28
-13;0;keuken;2023-06-29 20:07:28;2023-06-29 20:07:28
-14;0;slaapkamer;2023-06-29 20:07:28;2023-06-29 20:07:28
-15;4;slaapkamer;2023-06-29 20:07:28;2023-06-29 20:07:28
-16;3;kelder;2023-06-29 20:07:28;2023-06-29 20:07:28
-17;7;slaapkamer;2023-06-29 20:07:28;2023-06-29 20:07:28
-18;5;slaapkamer;2023-06-29 20:07:28;2023-06-29 20:07:28
+id;omschrijving
+1;"David Bowie (geboren als David Robert Jones op 8 januari 1947 in Brixton, Londen) was een kameleon in de rockmuziek. In de jaren 70 brak hij wereldwijd door met zijn alter ego Ziggy Stardust. Hij was getrouwd met Angela Barnett (1970-1980) met wie hij zoon Duncan kreeg. Bowie werd beroemd door zijn innovatieve mix van glamrock, kunst en mode, beginnend bij het album 'The Rise and Fall of Ziggy Stardust'. Zijn vermogen om zichzelf telkens opnieuw uit te vinden, van de 'Thin White Duke' tot zijn Berlijnse trilogie, maakte hem een icoon van de tegencultuur."
+2;"Freddie Mercury (geboren als Farrokh Bulsara op 5 september 1946 in Stone Town, Zanzibar) was de frontman van Queen. Hoewel hij een langdurige relatie had met Mary Austin, kwam hij later uit voor zijn homoseksualiteit. Hij werd wereldberoemd door zijn ongekende stembereik en theatrale podiumpersoonlijkheid. De grote doorbraak kwam in 1975 met 'Bohemian Rhapsody'. Queen domineerde de jaren 70 met een mix van hardrock, opera en pop, waarbij Mercury's charisma in stadions legendarisch werd."
+3;"Led Zeppelin (Focus op Robert Plant, geboren 20 augustus 1948 in West Bromwich, VK). Plant was getrouwd met Maureen Wilson en had drie kinderen. De band werd de blauwdruk voor hardrock en heavy metal. Ze braken door met hun titelloze debuut in 1969, maar definieerden de jaren 70 met 'Stairway to Heaven'. Plant's rauwe vocalen en mystieke teksten, gecombineerd met het gitaarwerk van Jimmy Page, maakten hen tot de grootste band ter wereld in dit decennium."
+4;"Pink Floyd (Focus op Roger Waters, geboren 6 september 1943 in Great Bookham, VK). Waters is meerdere malen getrouwd geweest en heeft drie kinderen. De band werd wereldberoemd door hun conceptalbums en baanbrekende liveshows. Na het vertrek van Syd Barrett nam Waters de artistieke leiding. Hun absolute doorbraak was 'The Dark Side of the Moon' (1973), een van de bestverkochte albums ooit. Ze stonden bekend om hun filosofische teksten en progressieve rockgeluid."
+5;"Bruce Springsteen (geboren 23 september 1949 in Long Branch, New Jersey). 'The Boss' komt uit een arbeidersgezin; zijn vader was buschauffeur. Hij werd beroemd door zijn energieke live-optredens en teksten over het Amerikaanse leven. Zijn grote doorbraak kwam in 1975 met het album 'Born to Run'. Springsteen wist met zijn E Street Band de essentie van rock-'n-roll te vangen en werd de stem van de gewone man in de jaren 70."
+6;"Fleetwood Mac (Focus op Stevie Nicks, geboren 26 mei 1948 in Phoenix, Arizona). Nicks trad in 1975 toe tot de band samen met Lindsey Buckingham, met wie ze destijds een relatie had. Ze werd beroemd door haar mystieke stem en unieke kledingstijl. Het album 'Rumours' (1977), getekend door de relationele spanningen binnen de band, werd een gigantisch succes. Nicks groeide uit tot de 'reigning queen of rock and roll' dankzij hits als 'Dreams' en 'Rhiannon'."
+7;"Eagles (Focus op Don Henley, geboren 22 juli 1947 in Gilmer, Texas). Henley is vader van drie kinderen uit zijn huwelijk met Sharon Summerall. De Eagles werden de architecten van de countryrock. Ze begonnen als begeleidingsband van Linda Ronstadt maar braken zelf door met hits als 'Take It Easy'. Hun iconische status werd verzegeld met 'Hotel California' (1976). Henley's herkenbare stem en het perfecte harmoniegezang definieerden het geluid van de Amerikaanse westkust."
+8;"The Rolling Stones (Focus op Mick Jagger, geboren 26 juli 1943 in Dartford, VK). Jagger was in de jaren 70 getrouwd met Bianca Pérez-Mora Macias. Hoewel ze al beroemd waren in de jaren 60, consolideerden de Stones hun titel als 'Greatest Rock and Roll Band in the World' in de jaren 70 met albums als 'Sticky Fingers' en 'Exile on Main St.'. Jagger's provocerende podiumpresentatie en de chemie met Keith Richards bleven onovertroffen."
+9;"Patti Smith (geboren 30 december 1946 in Chicago, Illinois). Smith was getrouwd met Fred 'Sonic' Smith en had twee kinderen. Ze werd de 'Godmother of Punk' genoemd. Haar debuutalbum 'Horses' (1975) was een fusie van rock en poëzie die de weg vrijmaakte voor de punkbeweging in New York. Ze werd beroemd door haar intellectuele benadering van rockmuziek en haar androgyne uitstraling, wat een enorme invloed had op vrouwelijke artiesten na haar."
+10;"Neil Young (geboren 12 november 1945 in Toronto, Canada). Young heeft drie kinderen en was lang getrouwd met Pegi Morton. Hij werd beroemd als lid van Buffalo Springfield en Crosby, Stills, Nash & Young, maar zijn solocarrière in de jaren 70 was legendarisch. Met het album 'Harvest' (1972) en zijn rauwe, emotionele gitaarspel werd hij een boegbeeld van de singer-songwriter rock en later een inspiratiebron voor de grunge."

@@ -4,11 +4,10 @@ from sqlalchemy.orm import sessionmaker
 from sqlmodel import SQLModel, text
 from dotenv import load_dotenv
 import os
-
 # Laad de .env file
 load_dotenv()
-# engine = create_async_engine(os.getenv("DATABASE_URL"))
-engine = create_async_engine("postgresql+asyncpg://rag:rag@db/rag")
+engine = create_async_engine(os.getenv("DATABASE_URL"))
+# engine = create_async_engine("postgresql+asyncpg://rag:rag@db/rag")
 
 # De sessie-maker configuratie
 async_session_maker = sessionmaker(

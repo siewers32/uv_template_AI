@@ -1,7 +1,6 @@
 import pandas as pd
 import sys
 import os
-from sqlmodel import Session
 import asyncio
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -35,4 +34,4 @@ async def run_ingestion(csv_path: str, text_col: str):
     print("Klaar!")
 
 if __name__ == "__main__":
-    asyncio.run(run_ingestion("data/data.csv", text_col="description"))
+    asyncio.run(run_ingestion("data/data.csv", text_col="omschrijving"))

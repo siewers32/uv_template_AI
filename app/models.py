@@ -1,6 +1,6 @@
 from pgvector.sqlalchemy import Vector
-from pydantic import ConfigDict, BaseModel
 from sqlmodel import SQLModel, Field, Column
+from pydantic import BaseModel
 from typing import Optional, List
 
 class Document(SQLModel, table=True):
@@ -15,14 +15,12 @@ class QueryRequest(SQLModel):
 
 class QueryResponse(SQLModel):
     answer: str
-    sources: List[str]
-    
-class MyModel(BaseModel):
-    test: str
-    numbers: List[int]
+    is_from_database: bool
+    sources: List[SourceDetail]
 
-class Hero(SQLModel, table=True):
-    id: int | None = Field(default=None, primary_key=True)
-    name: str = Field(index=True)
-    age: int | None = Field(default=None, index=True)
-    secret_name: str
+class SourceDetail(BaseModel):
+    id: Optional[int]
+    content: str
+    distance: float  # De afstandsscore uit de vector search
+
+

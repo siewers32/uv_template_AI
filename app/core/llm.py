@@ -19,7 +19,8 @@ async def get_embedding(text: str) -> list[float]:
     return response.data[0].embedding
 
 async def generate_answer(question: str, context: str) -> str:
-    prompt = f"""Gebruik de onderstaande context om de vraag te beantwoorden. 
+    prompt = f""""Gebruik uitsluitend de verstrekte context om de vraag te beantwoorden. Als het antwoord niet in de context staat, zeg dan expliciet dat je het niet in de database hebt gevonden, maar antwoord daarna op basis van je eigen kennis."
+    Gebruik de onderstaande context om de vraag te beantwoorden. 
     Context: {context}
     Vraag: {question}
     Antwoord:"""
